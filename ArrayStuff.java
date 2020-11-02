@@ -1,7 +1,7 @@
 /*
- * Programmer:
- * Date:
- * Purpose:
+ * Programmer: Gryphen
+ * Date: November 2nd 2020
+ * Purpose: to learn Array's
  */
 
 import java.util.Scanner;
@@ -11,16 +11,10 @@ public class ArrayStuff {
         // Create the input scanner
         Scanner input = new Scanner(System.in);
 
-        // PART A
-
-        // TODO: Create integer array called "ages" with length 5.
-
-
-        // TODO: Change the 3rd element of "ages" to be 18
-
-
-        // TODO: Change the first element of "ages" to be an integer entered by the user
+        int [] ages = new int [5];
+        ages[3] = 18;
         System.err.println("Enter an integer:");
+        ages[0]= input.nextInt(); 
 
 
         // TODO: Change the last element of "ages" to be the first element squared
@@ -28,20 +22,23 @@ public class ArrayStuff {
 
         // TODO: Print all of the elements of "ages", one per line
 
+        
 
-
-        // PART B
-
-        // TODO: Create AND initialize an array called "planets" that holds the
-        // names of the planets in order from closest to the sun to farthest.
-        // NOTE: Pluto is NOT a planet.
-
-
+        string [] planets = new string [8];
+        planets[0] = "Mercury";
+        planets[1] = "Venus";
+        planets[2] = "Earth";
+        planets[3] = "Mars";
+        planets[4] = "Jupiter";
+        planets[5] = "Saturn";
+        planets[6] = "Uranus";
+        planets[7] = "Neptune";
         // TODO: Print the first letter of the 7th planet from the sun
 
 
         // TODO: Change the name of our planet to be a word that the user inputs
         System.err.println("What do you want to rename Earth to be?");
+        planets[2] = input.nextLong();
 
 
         // TODO: Replace the first planet with the planet at index 2, but with all
